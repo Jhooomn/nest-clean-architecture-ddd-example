@@ -76,7 +76,7 @@ Routes is following REST standard (Richardson level 3)
     app.enableShutdownHooks();
   }
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
   logger.log('API-Gateway is listening on port 3000');
 }
 bootstrap();
